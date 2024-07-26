@@ -59,6 +59,7 @@ I only used **TFIDVectorizer**(Term frequency Inverse document frequency (TFIDF)
 
 
 **RESULTS ARE AS FOLLOWS:**
+
 Multinomial Naive Bayes Classifier:
 
               precision    recall  f1-score   support
