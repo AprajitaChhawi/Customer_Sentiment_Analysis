@@ -98,7 +98,7 @@ Passive Aggressive Classifier:
     weighted       0.92      0.92      0.92      6548
     accuracy                           0.92      6548
 
-Out of these 3 , SVC has the best accuracy results (The Best Model is SVC : 0.93)
+Out of these 3 , SVC had the best accuracy results (The Best Model is SVC : 0.93)
 
 
 I will add 2 more pipelines later
