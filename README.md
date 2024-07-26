@@ -1,56 +1,56 @@
-**Customer_Sentiment_Analysis** : Project done as part of hackathon.
-
-This dataset(which is not the dataset the used for hackathon, but a similar customer review data) contains over 33,000 anonymized reviews of McDonald's stores in the United States, scraped from Google reviews. It provides valuable insights into customer experiences and opinions about various McDonald's locations across the country. The dataset includes information such as store names, categories, addresses, geographic coordinates, review ratings, review texts, and timestamps.
-
-**DATA DESCRIPTION:**
+**Customer Sentiment Analysis: Project Done as Part of Hackathon**
 
 
-Columns :
+This dataset, while not the same dataset used for the hackathon but similar customer review data, contains over 33,000 anonymized reviews of McDonald's stores in the United States, scraped from Google reviews. It provides valuable insights into customer experiences and opinions about various McDonald's locations across the country. The dataset includes information such as store names, categories, addresses, geographic coordinates, review ratings, review texts, and timestamps.
 
-reviewer_id: Unique identifier for each reviewer (anonymized)
+**Data Description**
 
-store_name: Name of the McDonald's store
+**Columns:**
 
-category: Category or type of the store
+1. reviewer_id: Unique identifier for each reviewer (anonymized)
 
-store_address: Address of the store
+2. store_name: Name of the McDonald's store
 
-latitude: Latitude coordinate of the store's location
+3. category: Category or type of the store
 
-longitude: Longitude coordinate of the store's location
+4. store_address: Address of the store
 
-rating_count: Number of ratings/reviews for the store
+5. latitude: Latitude coordinate of the store's location
 
-review_time: Timestamp of the review
+6. longitude: Longitude coordinate of the store's location
 
-review: Textual content of the review
+7. rating_count: Number of ratings/reviews for the store
 
-rating: Rating provided by the reviewer
+8. review_time: Timestamp of the review
+
+9. review: Textual content of the review
+
+10. rating: Rating provided by the reviewer
 
 
-**STEPS PERFORMED**
+**Steps Performed**
 
 1. Import Libraries
-   
+
 2. Import Data
-   
+
 3. Feature Engineering
-   
-4. Describing dummy data being used using store Address ,review Time, rating and unique values present in it.
 
-5. EDA : Exploratory Data Analysis (EDA) with Python involves analyzing and summarizing data to gain insights and understand its underlying patterns, relationships, and distributions.
+4. Describing Dummy Data: Used store address, review time, rating, and unique values present in it.
 
-6. Univariate and Bivariate Analysis of Data : Univariate Analysis is a type of data visualization where we visualize only a single variable at a time. Bivariate analysis is the simultaneous analysis of two variables. It explores the concept of the relationship between two variable whether there exists an association and the strength of this association.
+5. EDA: Exploratory Data Analysis (EDA) with Python involves analyzing and summarizing data to gain insights and understand its underlying patterns, relationships, and distributions.
+
+6. Univariate and Bivariate Analysis of Data: Univariate analysis visualizes a single variable at a time. Bivariate analysis involves the simultaneous analysis of two variables, exploring the relationship between them, and identifying the strength of this association.
 
 7. Data Preprocessing
-   
-8. Sentiment Analyzer using SentimentIntensityAnalyzer : Give a sentiment intensity score to sentences(passed the preprocessed data from step 7 here).
-   
-9. Identifying sentiments using scores from above steps , plotting Word count (WordCloud), identifying words with the biggest contribution in Sentiment , identifying words in Positive Sentiment, negative sentiment and neutral sentiment
-    
-10. Split Data : For training and testing
 
-12. Modeling : Here in this step ,for the hackathon
+8. Sentiment Analyzer Using SentimentIntensityAnalyzer: Assign a sentiment intensity score to sentences (passed the preprocessed data from step 7 here).
+
+9. Identifying Sentiments: Using scores from the above step, plotting word count (WordCloud), identifying words with the biggest contribution to sentiment, and identifying words in positive, negative, and neutral sentiment.
+
+10. Split Data: For training and testing.
+
+11. Modeling: For the hackathon, I used TFIDFVectorizer (Term Frequency Inverse Document Frequency) and Multinomial Naive Bayes Classifier. TFIDF is a statistical formula to convert text documents into vectors based on the relevancy of the word. Multinomial Naive Bayes is a probabilistic classifier used to calculate the probability distribution of text data, which makes it well-suited for data with features representing discrete frequencies or counts of events in various natural language processing (NLP) tasks.
 
 I only used **TFIDVectorizer**(Term frequency Inverse document frequency (TFIDF) is a statistical formula to convert text documents into vectors based on the relevancy of the word) and **Multinomial Naive Bayes Classifier** (probabilistic classifier to calculate the probability distribution of text data, which makes it well-suited for data with features that represent discrete frequencies or counts of events in various natural language processing (NLP) tasks) as a pipeline 
 
