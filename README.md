@@ -1,5 +1,4 @@
-**Customer_Sentiment_Analysis**
-Customer Sentiment Analysis Project done as part of hackathon.
+**Customer_Sentiment_Analysis** : Project done as part of hackathon.
 
 This dataset(which is not the dataset the used for hackathon, but a similar customer review data) contains over 33,000 anonymized reviews of McDonald's stores in the United States, scraped from Google reviews. It provides valuable insights into customer experiences and opinions about various McDonald's locations across the country. The dataset includes information such as store names, categories, addresses, geographic coordinates, review ratings, review texts, and timestamps.
 
