@@ -6,14 +6,23 @@ This dataset(which is not the dataset the used for hackathon, but a similar cust
 Columns :
 
 reviewer_id: Unique identifier for each reviewer (anonymized)
+
 store_name: Name of the McDonald's store
+
 category: Category or type of the store
+
 store_address: Address of the store
+
 latitude: Latitude coordinate of the store's location
+
 longitude: Longitude coordinate of the store's location
+
 rating_count: Number of ratings/reviews for the store
+
 review_time: Timestamp of the review
+
 review: Textual content of the review
+
 rating: Rating provided by the reviewer
 
 
