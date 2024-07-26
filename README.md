@@ -49,44 +49,48 @@ I only used **TFIDVectorizer**(Term frequency Inverse document frequency (TFIDF)
 
 **RESULTS ARE AS FOLLOWS:**
 Multinomial Naive Bayes Classifier:
-              precision    recall  f1-score   support
 
+              precision    recall  f1-score   support
     negative       0.83      0.75      0.79      1721
      neutral       0.98      0.22      0.37      1244
     positive       0.73      0.96      0.83      3583
-
+    macroavg       0.85      0.65      0.66      6548
+    weighted       0.81      0.77      0.73      6548
     accuracy                           0.77      6548
-   macro avg       0.85      0.65      0.66      6548
-weighted avg       0.81      0.77      0.73      6548
 
 But in this project i have included 2 more pipelines
 
 1. **svc_pipeline = make_pipeline(TfidfVectorizer(), SVC())**
+
+   
 Support Vector Classifier:
 
               precision    recall  f1-score   support
-
     negative       0.90      0.88      0.89      1721
      neutral       0.91      0.91      0.91      1244
     positive       0.95      0.96      0.95      3583
+    macroavg       0.92      0.92      0.92      6548
+    weighted       0.93      0.93      0.93      6548
     accuracy                           0.93      6548
-   macro avg       0.92      0.92      0.92      6548
-weighted avg       0.93      0.93      0.93      6548
 
 3. **pa_pipeline = make_pipeline(TfidfVectorizer(), PassiveAggressiveClassifier())**
-Passive Aggressive Classifier:
-              precision    recall  f1-score   support
 
+   
+Passive Aggressive Classifier:
+
+              precision    recall  f1-score   support
     negative       0.89      0.87      0.88      1721
      neutral       0.89      0.91      0.90      1244
     positive       0.95      0.94      0.94      3583
-
+    macroavg       0.91      0.91      0.91      6548
+    weighted       0.92      0.92      0.92      6548
     accuracy                           0.92      6548
-   macro avg       0.91      0.91      0.91      6548
-weighted avg       0.92      0.92      0.92      6548
 
 Out of these 3 , SVC has the best accuracy results (The Best Model is SVC : 0.93)
-I will add 2 more pipelines later
-**bernoulli_nb_pipeline = make_pipeline(TfidfVectorizer(), BernoulliNB())
 
-logistic_pipeline = make_pipeline(TfidfVectorizer(), LogisticRegression())**
+
+I will add 2 more pipelines later
+
+1.**bernoulli_nb_pipeline = make_pipeline(TfidfVectorizer(), BernoulliNB())**
+
+2.**logistic_pipeline = make_pipeline(TfidfVectorizer(), LogisticRegression())**
