@@ -29,17 +29,28 @@ rating: Rating provided by the reviewer
 
 
 **STEPS PERFORMED**
+
 1. Import Libraries
+   
 2. Import Data
-3. Feature Enginering
+   
+3. Feature Engineering
+   
 4. Describing dummy data being used using store Address ,review Time, rating and unique values present in it.
+
 5. EDA : Exploratory Data Analysis (EDA) with Python involves analyzing and summarizing data to gain insights and understand its underlying patterns, relationships, and distributions.
+
 6. Univariate and Bivariate Analysis of Data : Univariate Analysis is a type of data visualization where we visualize only a single variable at a time. Bivariate analysis is the simultaneous analysis of two variables. It explores the concept of the relationship between two variable whether there exists an association and the strength of this association.
+
 7. Data Preprocessing
+   
 8. Sentiment Analyzer using SentimentIntensityAnalyzer : Give a sentiment intensity score to sentences(passed the preprocessed data from step 7 here).
+   
 9. Identifying sentiments using scores from above steps , plotting Word count (WordCloud), identifying words with the biggest contribution in Sentiment , identifying words in Positive Sentiment, negative sentiment and neutral sentiment
+    
 10. Split Data : For training and testing
-11. Modeling : Here in this step ,for the hackathon
+
+12. Modeling : Here in this step ,for the hackathon
 
 I only used **TFIDVectorizer**(Term frequency Inverse document frequency (TFIDF) is a statistical formula to convert text documents into vectors based on the relevancy of the word) and **Multinomial Naive Bayes Classifier** (probabilistic classifier to calculate the probability distribution of text data, which makes it well-suited for data with features that represent discrete frequencies or counts of events in various natural language processing (NLP) tasks) as a pipeline 
 
