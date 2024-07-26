@@ -43,6 +43,7 @@ Multinomial Naive Bayes Classifier:
     negative       0.83      0.75      0.79      1721
      neutral       0.98      0.22      0.37      1244
     positive       0.73      0.96      0.83      3583
+
     accuracy                           0.77      6548
    macro avg       0.85      0.65      0.66      6548
 weighted avg       0.81      0.77      0.73      6548
@@ -50,8 +51,7 @@ weighted avg       0.81      0.77      0.73      6548
 But in this project i have included 2 more pipelines
 
 1. **svc_pipeline = make_pipeline(TfidfVectorizer(), SVC())**
-   
-   Support Vector Classifier:
+Support Vector Classifier:
 
               precision    recall  f1-score   support
 
@@ -63,15 +63,12 @@ But in this project i have included 2 more pipelines
 weighted avg       0.93      0.93      0.93      6548
 
 3. **pa_pipeline = make_pipeline(TfidfVectorizer(), PassiveAggressiveClassifier())**
-   
-   Passive Aggressive Classifier:
-
-   
+Passive Aggressive Classifier:
               precision    recall  f1-score   support
 
     negative       0.89      0.87      0.88      1721
      neutral       0.89      0.91      0.90      1244
-    positive       0.94      0.95      0.94      3583
+    positive       0.95      0.94      0.94      3583
 
     accuracy                           0.92      6548
    macro avg       0.91      0.91      0.91      6548
