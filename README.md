@@ -31,7 +31,11 @@ rating: Rating provided by the reviewer
 11. Modeling : Here in this step ,for the hackathon
 
 I only used **TFIDVectorizer**(Term frequency Inverse document frequency (TFIDF) is a statistical formula to convert text documents into vectors based on the relevancy of the word) and **Multinomial Naive Bayes Classifier** (probabilistic classifier to calculate the probability distribution of text data, which makes it well-suited for data with features that represent discrete frequencies or counts of events in various natural language processing (NLP) tasks) as a pipeline 
+
+
 **nb_pipeline = make_pipeline(TfidfVectorizer(), MultinomialNB())**
+
+
 **RESULTS ARE AS FOLLOWS:**
 Multinomial Naive Bayes Classifier:
               precision    recall  f1-score   support
